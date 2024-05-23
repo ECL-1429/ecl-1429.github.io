@@ -148,13 +148,14 @@
         <div class="item">
         <!-- Your image here -->
         <img src="static/images/graph.jpg" alt="MY ALT TEXT"/>
-        <h2 class="content has-text-justified">
-          (a). Example of robot manipulation task with three trajectories and three nodes: one target node (movable) and two noisy nodes (one movable, one unmovable). (b). Underlying causal structures of the example.
-        <br>
-        </h2>
+        <h3>
+         Figure: (a). Example of robot manipulation task with three trajectories and three nodes: one target node (movable) and two noisy nodes (one movable, one unmovable). (b). Underlying causal structures of the example.
+        </h3>
+
       </div>
         <div class="content has-text-justified">
           <p>
+            <br>
             Empowerment and causal reasoning are crucial abilities for intelligence. In reinforcement learning (RL), empowerment enhances agents’ ability to actively control their environments by maximizing the mutual information between future states and actions. In model-based RL (MBRL), incorporating causal structures into dynamics models provides agents with a structured understanding of the environment to better control outcomes. We posit that learning causal world models can enhance agents’ empowerment and, conversely, improved empowerment can facilitate causal reasoning. From this viewpoint, our goal is to enhance agents’ empowerment, aiming to improve controllability and learning efficiency, and their ability to learn causal world models. We propose a framework, Empowerment through Causal Learning (ECL), where an agent with the awareness of causal models achieves empowerment-driven exploration and utilize its structured causal perception and control for task learning. Specifically, we first train a causal dynamics model of the environment based on collected data. We then maximize empowerment under the causal structure for policy learning, simultaneously updating the causal model to be more controllable than dynamics model without causal structure. An intrinsic curiosity reward is also included to prevent overfitting in offline model learning. Importantly, our framework is method-agnostic, capable of integrating various causal discovery and policy learning techniques. We evaluate ECL combined with 2 different causal discovery methods in 3 environments, demonstrating its superior performance compared to other causal MBRL methods, in terms of causal discovery, sample efficiency, and episodic rewards.
           </p>
         </div>

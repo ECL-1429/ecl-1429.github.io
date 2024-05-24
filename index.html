@@ -45,14 +45,20 @@
   <script src="static/js/index.js"></script>
 
   <style>
-  .video-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  video {
-    width: 48%; /* 视频宽度设置为视口宽度的48%，留出空间并排放置 */
-    margin-top: 10px;
-  }
+  .image-container {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Distribute items along the main axis */
+}
+
+.item figure {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.item figure img {
+  display: block; /* Make sure the image doesn't have extra space */
+}
+
 </style>
 </head>
 <body>
@@ -179,44 +185,6 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<!--<section class="hero is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--       <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--          First image description.-->
-<!--        </h2>-->
-<!--      </div>-->
-<!--      <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--          Second image description.-->
-<!--        </h2>-->
-<!--      </div>-->
-<!--      <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--         Third image description.-->
-<!--       </h2>-->
-<!--     </div>-->
-<!--     <div class="item">-->
-<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
-<!--      <h2 class="subtitle has-text-centered">-->
-<!--        Fourth image description.-->
-<!--      </h2>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</section>-->
-<!-- End image carousel -->
 <section class="section hero small">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -244,22 +212,25 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Experimental results in Manipulation</h2>
         <br>
-        <h3> Reach the movable red cude</h3>
+        <h3>Reach the movable red cube</h3>
         <div class="item">
-          <figure>
-        <!-- Your image here -->
-        <img src="static/videos/ecl/reach/1.gif" alt="MY ALT TEXT" width="620" />
-             <figcaption>ECL</figcaption>
-          </figure>
-          <figure>
-          <img src="static/videos/cdl/reach/1.gif" alt="MY ALT TEXT" width="620" />
-             <figcaption>CDL</figcaption>
-          </figure>>
+          <div class="image-container">
+            <figure>
+              <!-- Your image here -->
+              <img src="static/videos/ecl/reach/1.gif" alt="MY ALT TEXT" width="620" />
+              <figcaption>ECL</figcaption>
+            </figure>
+            <figure>
+              <img src="static/videos/cdl/reach/1.gif" alt="MY ALT TEXT" width="620" />
+              <figcaption>CDL</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-    </div>
-     </div>
 </section>
+
 <!-- Video carousel -->
 <!--<section class="hero is-small">-->
 <!--  <div class="hero-body">-->

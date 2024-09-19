@@ -90,7 +90,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Anonymous submission<br>NeurIPS 2024</span>
+                    <span class="author-block">Anonymous submission<br>ICLR 2025</span>
                   </div>
 
 <!--                  <div class="column has-text-centered">-->
@@ -183,7 +183,7 @@
         <div class="content has-text-justified">
           <p>
             <br>
-            Empowerment and causal reasoning are crucial abilities for intelligence. In reinforcement learning (RL), empowerment enhances agents’ ability to actively control their environments by maximizing the mutual information between future states and actions. In model-based RL (MBRL), incorporating causal structures into dynamics models provides agents with a structured understanding of the environment to better control outcomes. We posit that learning causal world models can enhance agents’ empowerment and, conversely, improved empowerment can facilitate causal reasoning. From this viewpoint, our goal is to enhance agents’ empowerment, aiming to improve controllability and learning efficiency, and their ability to learn causal world models. We propose a framework, Empowerment through Causal Learning (ECL), where an agent with the awareness of causal models achieves empowerment-driven exploration and utilize its structured causal perception and control for task learning. Specifically, we first train a causal dynamics model of the environment based on collected data. We then maximize empowerment under the causal structure for policy learning, simultaneously updating the causal model to be more controllable than dynamics model without causal structure. An intrinsic curiosity reward is also included to prevent overfitting in offline model learning. Importantly, our framework is method-agnostic, capable of integrating various causal discovery and policy learning techniques. We evaluate ECL combined with 2 different causal discovery methods in 3 environments, demonstrating its superior performance compared to other causal MBRL methods, in terms of causal discovery, sample efficiency, and episodic rewards.
+           Empowerment and causal reasoning are crucial abilities for intelligence. Empowerment enhances the ability of agents to actively control their environments by maximizing the mutual information between future states and actions. In Model-Based Reinforcement Learning (MBRL), incorporating causal structures into dynamics models provides agents with a structured understanding of the environments, enabling better outcomes. We posit that empowerment coupled with causal understanding can improve controllability, while enhanced empowerment gain can further facilitate causal reasoning in MBRL. To improve learning efficiency and controllability, we propose a novel framework, Empowerment through Causal Learning (ECL), where an agent with the awareness of causal dynamics models achieves empowerment-driven exploration and utilizes its structured causal perception and control for task learning. Specifically, ECL operates by first training a causal dynamics model of the environment based on collected data. We then maximize empowerment under the causal structure for policy learning, simultaneously updating the causal dynamics model to be more controllable than dense dynamics model without causal structure. Moreover, an intrinsic curiosity reward is also included to balance the causality, mitigating overfitting during policy learning. Importantly, our framework is method-agnostic and is capable of integrating various causal discovery and RL algorithms. We evaluate ECL combined with different causal discovery methods across $6$ environments including pixel-based tasks, demonstrating its superior performance compared to other causal MBRL methods, in terms of causal discovery, sample efficiency, and asymptotic performance.
           </p>
         </div>
       </div>
@@ -257,6 +257,35 @@
           </div>
         </div>
       </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental results in Manipulation</h2>
+        <br>
+        <div class="aligned-text">
+          <p class="bold-text">Reach the movable red cube</p>
+        </div>
+        <br>
+        <div class="item">
+          <div class="image-container">
+            <figure>
+              <!-- Your image here -->
+              <img src="static/videos/ecl/reach/1.gif" alt="MY ALT TEXT" width="600" />
+              <figcaption>ECL</figcaption>
+            </figure>
+            <figure>
+              <img src="static/videos/cdl/reach/1.gif" alt="MY ALT TEXT" width="600" />
+              <figcaption>CDL</figcaption>
+            </figure>
+          </div>
+        </div>
+
     </div>
   </div>
 </section>
